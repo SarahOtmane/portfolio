@@ -1,0 +1,346 @@
+@charset "UTF-8";
+
+/*-----------------------------------------------
+    
+       ********** Table of Contents **********
+
+01. =google fonts
+02. =variables
+03. =base
+04. =header
+05. =home
+06. =about
+07. =skills
+08. =qualification
+09. =work
+10. =portfolio popup
+11. =contact
+12. =footer
+13. =version petit ecran
+14. =version moyen ecran
+15. =version grand ecran
+-----------------------------------------------*/
+
+
+
+/* ---------------------------- 
+        01 := google fonts 
+---------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,400&display=swap');
+
+
+
+
+/* ---------------------------- 
+        02 := variables
+---------------------------- */
+:root{
+    --first-color: hsl(250, 69%, 61%);
+    --first-color-second: hsl(250, 30%, 8%);
+    --first-color-alt: hsl(250, 57%, 53%);
+    --first-color-lighter: hsl(250, 92%, 85%);
+    --title-color: hsl(250, 8%, 95%);
+    --text-color: hsl(250, 8%, 75%);
+    --text-color-light: hsl(250, 8%, 65%);
+    --input-color: hsl(250, 29%, 16%);
+    --body-color: hsl(250, 60%, 99%);
+    --body-color: hsl(250, 28%, 12%);
+    --background-color-popup: hsla(250, 30%, 8%, .8);    --backgroud-color-popo-inner: hsla(240, 61%, 69%, 1);
+    --backgroud-color-popo-inner: hsla(240, 30%, 25%, 1);
+    --background-menu: rgba(176, 160, 248, 0.8);
+    --background-card: rgba(196, 183, 251, 0.8);
+    --container-color: hsl(250, 29%, 16%);  
+}
+
+
+
+/* ---------------------------- 
+        03 := base
+---------------------------- */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    background-color: var(--body-color);
+    color: var(--text-color);
+    padding: 1rem;
+}
+
+h1,h2,h3,h4{
+    color: var(--title-color);
+    font-weight: 600;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+figure img{
+    width: 90%;
+}
+
+section{
+    width: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+}
+
+
+/* ---------------------------- 
+        04 := My class
+---------------------------- */
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.h-max-content{
+    height: max-content;
+}
+
+.title{
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.subtitle{
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.weight-500{
+    font-weight: 500;
+}
+
+
+/* ---------------------------- 
+        05 := header 
+---------------------------- */
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+ul{
+    background-color: var(--background-menu);
+    backdrop-filter: blur(10px);
+    border-radius: 4rem;
+    padding: 1rem 2rem;
+    margin: 0;
+    justify-content: space-between;
+}
+
+ul span{
+    display: none;
+}
+
+.nav-link{
+    color: var(--title-color);
+    font-weight: 500;
+    padding: .5rem 1rem;
+    border-radius: 5rem;
+    background: linear-gradient(180deg,
+                hsla(250, 92%, 87%, 1),
+                hsla(250, 92%, 87%, .2)
+    );
+    box-shadow: 0 0 16px rgba(53, 8, 255, 0.4);
+}
+
+
+/* ------------------------------- 
+        06 := section1: about
+------------------------------- */
+
+.section1 .button{
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #fff;
+    padding: 1rem;
+    width: max-content;
+    border-radius: .5rem;
+    height: 3.8rem;
+}
+
+.icon{
+    font-size: 20px;
+    margin-left: .5rem;
+}
+
+.section1 figure{
+    width: 90%;
+    background-color: var(--first-color);
+    border-radius: 10%;
+    justify-content: center;
+    margin: auto;
+}
+
+.section1 figure + p, .section1 figure,  .section1 .button{
+    margin-top: 1.5rem;
+}
+
+.section1 figure img{
+    width: 85%;
+}
+
+.section1 figure, .section1 figure img{
+    height: 220px;
+}
+
+/* --------------------------------------- 
+        07 := section2: skills
+---------------------------------------  */
+
+
+
+
+/* --------------------------------------- 
+        08 := section3: qualifications
+---------------------------------------  */
+
+.section3 .qualification__icon{
+    color: var(--first-color);
+    font-size: 1.8rem;
+    margin-right: .25rem;
+}
+
+.section3 .qualification__icon + span{
+    font-size: 1.1rem;
+    color: var(--first-color);
+    padding-top: .4rem;
+}
+
+.section3 .qualification__data{
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+}
+
+.section3 .qualification__title{
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.section3 .qualification__subtitle{
+    font-size: .93rem;
+}
+
+.section3 .qualification__calendar{
+    font-size: .81rem;
+    margin-top: 1rem;
+    color: var(--text-color-light);
+}
+
+.section3 .qualification__rounder{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--first-color);
+}
+
+.section3 .qualification__line{
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--first-color);
+    transform: translate(6px, -7px);
+}
+
+/* --------------------------------------- 
+        09 := section4: portfolio
+---------------------------------------  */
+
+.section4 .work__container{
+    padding-top: 1rem;
+}
+
+.section4 .work__item{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    color: var(--first-color);
+    padding-top: .4rem;
+    padding: .25rem .75rem;
+    cursor: pointer;
+    border-radius: .5rem;
+}
+
+.section4 .work__card{
+    background-color: var(--background-card);
+    backdrop-filter: blur(10px);
+    padding: 1.25rem;
+    border-radius: .5rem;
+    width: 90%;
+    margin-bottom: 1rem;
+}
+
+.section4 .portfolio__item-details{
+    display: none;
+}
+.section4 .active-work{
+    background-color: var(--first-color);
+    color: #fff;
+}
+
+.section4 .work__img{
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    height: 210px;
+}
+
+.section4 .work__title{
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+
+.section4 .work__button{
+    color: var(--first-color);
+    font-size: .93rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.section4 .work__button-icon{
+    font-size: 1rem;
+    transition: .3s;
+}
+
+.section4 .work__button:hover .work__button-icon{
+    transform: translateX(.25rem);
+}
