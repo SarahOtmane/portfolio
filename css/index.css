@@ -127,7 +127,7 @@ section{
 }
 
 .title{
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-top: 1.5rem;
 }
 
@@ -343,4 +343,152 @@ ul span{
 
 .section4 .work__button:hover .work__button-icon{
     transform: translateX(.25rem);
+}
+
+
+/* ---------------------------- 
+        10 := portfolio popup
+---------------------------- */
+
+.portfolio__popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background-color-popup);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    z-index: 1000;
+    transition: .3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.portfolio__popup.open{
+    opacity: 1;
+    visibility: visible;
+}
+
+.portfolio__popup-inner{
+    background-color: var(--backgroud-color-popo-inner);
+    color: #fff;
+    width: 900px;
+    border-radius: .5rem;
+    padding: 2.5rem;
+    position: relative;
+}
+
+.portfolio__popup-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 3rem;
+}
+
+.portfolio__popup-close{
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--first-color);
+    cursor: pointer;
+}
+
+.portfolio__popup-img{
+    border-radius: .5rem;
+}
+
+.portfolio__popup-subtitle{
+    font-size: var(--smaller-font-size);
+    margin-bottom: .25rem;
+}
+
+.details__title{
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: 1rem;
+}
+
+.details__description{
+    font-size: var(--small-font-size);
+    margin-bottom: 2rem;
+}
+
+.details__info li{
+    margin-bottom: .75rem;
+    text-transform: capitalize;
+    font-size: var(--small-font-size);
+}
+
+.details__info li:last-child{
+    margin-bottom: 0;
+}
+
+.details__info li span{
+    font-weight: normal;
+}
+
+.details__info li a{
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+
+/* --------------------------------------- 
+        11 := footer
+---------------------------------------  */
+footer section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+footer .contact__information{
+    margin-bottom: .8rem;
+    margin-left: 11%;
+} 
+
+footer .contact__icon{
+    font-size: 2rem;
+    color: var(--first-color);
+    margin-right: .75rem;
+}
+
+footer .contact__title{
+    font-size: 1.1rem;
+}
+
+footer .contact__subtitle{
+    font-size: .93rem;
+    color: var(--text-color-light);
+}
+
+footer label{
+    font-size: var(--smaller-font-size);
+    color: var(--title-color);
+    margin-left: 1rem;
+}
+
+footer input, footer textarea{
+    background-color: var(--input-color);
+    border-radius: .5rem;
+    padding: .25rem .5rem .5rem 0;
+    font-family: var(--body-font);
+    color: var(--text-color);
+    font-size: var(--normal-font-size);
+    border: none;
+    outline: none;
+}
+
+footer button{
+    background-color: var(--first-color);
+    color: #fff;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    font-weight: var(--font-medium);
+    width: max-content;
 }
