@@ -26,7 +26,8 @@
 /* ---------------------------- 
         01 := google fonts 
 ---------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 
 
 
@@ -68,7 +69,7 @@ html{
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 1rem;
     background-color: var(--body-color);
     color: var(--text-color);
@@ -128,12 +129,14 @@ section{
 
 .title{
     font-size: 2rem;
-    margin-top: 1.5rem;
+    margin-top: 3rem;
 }
 
 .subtitle{
     color: var(--text-color);
     font-size: 1rem;
+    margin-top: .5rem;
+    margin-bottom: 2rem;
 }
 
 .text-align-center{
@@ -152,12 +155,6 @@ section{
 /* ---------------------------- 
         05 := header 
 ---------------------------- */
-.header{
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-}
-
 ul{
     background-color: var(--background-menu);
     backdrop-filter: blur(10px);
@@ -165,6 +162,9 @@ ul{
     padding: 1rem 2rem;
     margin: 0;
     justify-content: space-between;
+    position: fixed;
+    width: 90%;
+    z-index: 100;
 }
 
 ul span{
@@ -187,6 +187,10 @@ ul span{
 /* ------------------------------- 
         06 := section1: about
 ------------------------------- */
+
+main{
+    margin-top: 2rem;
+}
 
 .section1 .button{
     display: inline-block;
@@ -244,6 +248,10 @@ ul span{
     font-size: 1.1rem;
     color: var(--first-color);
     padding-top: .4rem;
+}
+
+.section3 > div > article, .section4 > article > div{
+    margin-bottom: 2rem;
 }
 
 .section3 .qualification__data{
@@ -443,7 +451,6 @@ ul span{
 footer section{
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
 }
 
 footer .contact__information{
@@ -466,29 +473,40 @@ footer .contact__subtitle{
     color: var(--text-color-light);
 }
 
-footer label{
-    font-size: var(--smaller-font-size);
-    color: var(--title-color);
-    margin-left: 1rem;
+form{
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
 }
 
-footer input, footer textarea{
+form .container_input{
+    justify-content: space-between;
+}
+
+form .container_input > div{
+    width: 48%;
+}
+
+form input, form textarea{
     background-color: var(--input-color);
     border-radius: .5rem;
-    padding: .25rem .5rem .5rem 0;
-    font-family: var(--body-font);
-    color: var(--text-color);
-    font-size: var(--normal-font-size);
+    font-family: 'Ubuntu', sans-serif;
     border: none;
     outline: none;
+    margin-bottom: 1rem;
+    padding: 1rem;
 }
 
-footer button{
+form input::placeholder, form textarea::placeholder{
+    color: #fff;
+}
+
+form button{
     background-color: var(--first-color);
     color: #fff;
     padding: 1rem;
     border-radius: .5rem;
     border: none;
-    font-weight: var(--font-medium);
     width: max-content;
+    margin-bottom: 1rem;
 }
