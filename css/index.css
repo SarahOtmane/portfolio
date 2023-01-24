@@ -65,6 +65,7 @@
 
 html{
     scroll-behavior: smooth;
+    width: 100%;
 }
 
 body{
@@ -73,6 +74,8 @@ body{
     background-color: #944654;
     color: #D7C0D0;
     padding: 1rem;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 ul{
@@ -155,11 +158,9 @@ ul{
     backdrop-filter: blur(10px);
     border-radius: 4rem;
     padding: 1rem 2rem;
-    margin: 0;
     justify-content: space-between;
-    position: fixed;
     width: 90%;
-    z-index: 100;
+    position: fixed;
 }
 
 ul span{
@@ -574,6 +575,10 @@ form button i{
         12 := media queries
 ---------------------------------------  */
 @media screen and (min-width: 576px){
+    ul span{
+        display: block;
+    }
+
     .section1 article{
         display: flex;
         flex-direction: row;
@@ -589,8 +594,87 @@ form button i{
         width: 55%;
         margin-top: .5rem;
     }
+
+    .section4 .work__container{
+        justify-content: space-between;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px){
-    
+    dl{
+        width: 70%;
+    }
+
+    .section3 section{
+        width: 70%;
+        margin: auto;
+    }
+
+    .section4 .work__card{
+        width: 48%;
+    }
+
+    form{
+        width: 80%;
+    }
+}
+
+
+@media screen and (min-width: 768px){
+    ul span{
+        display: block;
+    }
+
+    dl{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    dl > div{
+        width: 46%;
+    }
+
+    .section1 > article{
+        width: 80%;
+        margin: auto;
+    }
+
+    .section3 section{
+        width: 60%;
+        margin: auto;
+    }
+
+    .section4 .work__card{
+        width: 32%;
+    }
+
+    footer > div{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    footer article{
+        width: 45%;
+        height: max-content;
+        align-self: center;
+        padding-left: 10%;
+    }
+
+    footer article div{
+        margin-top: .5rem;
+    }
+
+    form{
+        width: 45%;
+    }
+}
+
+
+@media screen and (max-width: 1400px){
+    main{
+        max-width: 1400px;
+    }
 }
