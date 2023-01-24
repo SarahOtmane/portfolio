@@ -230,7 +230,17 @@ main{
 /* --------------------------------------- 
         07 := section2: skills
 ---------------------------------------  */
+dt i{
+    font-size: 2rem;
+    margin-right: .75rem;
+    color: var(--first-color);
+}
 
+dt span{
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: .2rem;
+}
 
 
 
