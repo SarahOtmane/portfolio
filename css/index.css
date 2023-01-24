@@ -44,10 +44,9 @@
     --text-color: hsl(250, 8%, 75%);
     --text-color-light: hsl(250, 8%, 65%);
     --input-color: hsl(250, 29%, 16%);
-    --body-color: hsl(250, 60%, 99%);
-    --body-color: hsl(250, 28%, 12%);
-    --background-color-popup: hsla(250, 30%, 8%, .8);    --backgroud-color-popo-inner: hsla(240, 61%, 69%, 1);
-    --backgroud-color-popo-inner: hsla(240, 30%, 25%, 1);
+    --body-color: #944654;
+    --background-color-popup: hsla(250, 30%, 8%, .8);    
+    --backgroud-color-popo-inner: hsla(240, 61%, 69%, 1);
     --background-menu: rgba(176, 160, 248, 0.8);
     --background-card: rgba(196, 183, 251, 0.8);
     --container-color: hsl(250, 29%, 16%);  
@@ -71,14 +70,9 @@ html{
 body{
     font-family: 'Ubuntu', sans-serif;
     font-size: 1rem;
-    background-color: var(--body-color);
-    color: var(--text-color);
+    background-color: #944654;
+    color: #D7C0D0;
     padding: 1rem;
-}
-
-h1,h2,h3,h4{
-    color: var(--title-color);
-    font-weight: 600;
 }
 
 ul{
@@ -130,10 +124,11 @@ section{
 .title{
     font-size: 2rem;
     margin-top: 3rem;
+    color: #EFF0D1;
 }
 
 .subtitle{
-    color: var(--text-color);
+    color: #D7C0D0;
     font-size: 1rem;
     margin-top: .5rem;
     margin-bottom: 2rem;
@@ -172,7 +167,7 @@ ul span{
 }
 
 .nav-link{
-    color: var(--title-color);
+    color: #EFF0D1;
     font-weight: 500;
     padding: .5rem 1rem;
     border-radius: 5rem;
@@ -189,13 +184,13 @@ ul span{
 ------------------------------- */
 
 main{
-    margin-top: 2rem;
+    margin-top: 5rem;
 }
 
 .section1 .button{
     display: inline-block;
-    background-color: var(--first-color);
-    color: #fff;
+    background-color: #EFF0D1;
+    color: #944654;
     padding: 1rem;
     width: max-content;
     border-radius: .5rem;
@@ -209,13 +204,13 @@ main{
 
 .section1 figure{
     width: 90%;
-    background-color: var(--first-color);
+    background-color: #D7C0D0;
     border-radius: 10%;
     justify-content: center;
     margin: auto;
 }
 
-.section1 figure + p, .section1 figure,  .section1 .button{
+.section1 p, .section1 figure,  .section1 .button{
     margin-top: 1.5rem;
 }
 
@@ -230,6 +225,15 @@ main{
 /* --------------------------------------- 
         07 := section2: skills
 ---------------------------------------  */
+dl{
+    width: 95%;
+    margin: auto;
+}
+
+dl > dt:nth-of-type(2){
+    margin-top: 4rem;
+}
+
 dt i{
     font-size: 2rem;
     margin-right: .75rem;
@@ -242,12 +246,52 @@ dt span{
     margin-top: .2rem;
 }
 
+dd{
+    padding-left: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.skills__titles{
+    justify-content: space-between;
+    margin-bottom: .8rem;
+}
+
+.skills__level{
+    color: var(--text-color-light);
+    font-size: .93rem;
+}
+
+.skills__percentage,
+.skills__bar{
+    height: 5px;
+    border-radius: .25rem;
+}
+
+.skills__bar{
+    background-color: var(--first-color-lighter);
+}
+
+.skills__percentage{
+    background-color: var(--first-color);
+}
+
+.skills__experi{
+    width: 90%;
+}
+
+.skills__indep{
+    width: 75%;
+}
+
+.skills__inter{
+    width: 60%;
+}
 
 
 /* --------------------------------------- 
         08 := section3: qualifications
 ---------------------------------------  */
-
 .section3 .qualification__icon{
     color: var(--first-color);
     font-size: 1.8rem;
@@ -260,7 +304,7 @@ dt span{
     padding-top: .4rem;
 }
 
-.section3 > div > article, .section4 > article > div{
+.section3 > div > div, .section4 > article > div{
     margin-bottom: 2rem;
 }
 
@@ -310,8 +354,6 @@ dt span{
 }
 
 .section4 .work__item{
-    font-size: var(--h3-font-size);
-    font-weight: var(--font-medium);
     color: var(--first-color);
     padding-top: .4rem;
     padding: .25rem .75rem;
@@ -320,7 +362,8 @@ dt span{
 }
 
 .section4 .work__card{
-    background-color: var(--background-card);
+    background-color: #D7C0D0;
+    color: #fff;
     backdrop-filter: blur(10px);
     padding: 1.25rem;
     border-radius: .5rem;
@@ -498,7 +541,7 @@ form .container_input > div{
 }
 
 form input, form textarea{
-    background-color: var(--input-color);
+    background-color: #D7C0D0;
     border-radius: .5rem;
     font-family: 'Ubuntu', sans-serif;
     border: none;
@@ -508,15 +551,46 @@ form input, form textarea{
 }
 
 form input::placeholder, form textarea::placeholder{
-    color: #fff;
+    color: #944654;
+    font-weight: bold;
 }
 
 form button{
-    background-color: var(--first-color);
-    color: #fff;
+    background-color: #EFF0D1;
+    color: #D7C0D0;
     padding: 1rem;
     border-radius: .5rem;
     border: none;
     width: max-content;
     margin-bottom: 1rem;
+}
+
+form button i{
+    color: #D7C0D0;
+}
+
+
+/* --------------------------------------- 
+        12 := media queries
+---------------------------------------  */
+@media screen and (min-width: 576px){
+    .section1 article{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .section1 figure{
+        margin-top: 0;
+        width: 42%;
+    }
+
+    .section1 > article > div{
+        width: 55%;
+        margin-top: .5rem;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px){
+    
 }
