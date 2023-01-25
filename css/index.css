@@ -36,22 +36,17 @@
         02 := variables
 ---------------------------- */
 :root{
-    --first-color: hsl(250, 69%, 61%);
-    --first-color-second: hsl(250, 30%, 8%);
-    --first-color-alt: hsl(250, 57%, 53%);
-    --first-color-lighter: hsl(250, 92%, 85%);
-    --title-color: hsl(250, 8%, 95%);
-    --text-color: hsl(250, 8%, 75%);
-    --text-color-light: hsl(250, 8%, 65%);
-    --input-color: hsl(250, 29%, 16%);
-    --body-color: #944654;
+    --body-color:  hsl(349, 36%, 43%);
+    --title-color: hsl(62, 51%, 88%);
+    --text-color: hsl(318, 22%, 80%);
+    --background-menu: hsla(318, 22%, 85%, .8);
+    --first-color: hsl(318, 22%, 50%);
+    --first-color-lighter: hsl(321, 22%, 85%);
+    --first-color-alt: hsl(250, 69%, 61%);
     --background-color-popup: hsla(250, 30%, 8%, .8);    
-    --backgroud-color-popo-inner: hsla(240, 61%, 69%, 1);
-    --background-menu: rgba(176, 160, 248, 0.8);
-    --background-card: rgba(196, 183, 251, 0.8);
-    --container-color: hsl(250, 29%, 16%);  
+    --backgroud-color-popo-inner: hsl(348, 28%, 66%);
 }
-
+        
 
 
 /* ---------------------------- 
@@ -70,8 +65,8 @@ html{
 body{
     font-family: 'Ubuntu', sans-serif;
     font-size: 1rem;
-    background-color: #944654;
-    color: #D7C0D0;
+    background-color: var(--body-color);
+    color: var(--text-color);
     padding: 1rem;
 }
 
@@ -124,11 +119,11 @@ section{
 .title{
     font-size: 2rem;
     margin-top: 3rem;
-    color: #EFF0D1;
+    color: var(--title-color);
 }
 
 .subtitle{
-    color: #D7C0D0;
+    color: var(--text-color);
     font-size: 1rem;
     margin-top: .5rem;
     margin-bottom: 2rem;
@@ -167,8 +162,9 @@ header ul span{
 }
 
 .nav-link{
-    color: #EFF0D1;
+    color: var(--title-color);
     font-weight: 500;
+    font-size: 1.3rem;
     padding: .5rem 1rem;
     border-radius: 5rem;
     background: linear-gradient(180deg,
@@ -189,8 +185,8 @@ main{
 
 .section1 .button{
     display: inline-block;
-    background-color: #EFF0D1;
-    color: #944654;
+    background-color: var(--title-color);
+    color: var(--body-color);
     padding: 1rem;
     width: max-content;
     border-radius: .5rem;
@@ -248,7 +244,7 @@ dd{
 }
 
 .skills__level{
-    color: var(--text-color-light);
+    color: #fff;
     font-size: .93rem;
 }
 
@@ -283,14 +279,14 @@ dd{
         08 := section3: qualifications
 ---------------------------------------  */
 .section3 .qualification__icon{
-    color: var(--first-color);
+    color: #fff;
     font-size: 1.8rem;
     margin-right: .25rem;
 }
 
 .section3 .qualification__icon + span{
     font-size: 1.1rem;
-    color: var(--first-color);
+    color: #fff;
     padding-top: .4rem;
 }
 
@@ -316,7 +312,7 @@ dd{
 .section3 .qualification__calendar{
     font-size: .81rem;
     margin-top: 1rem;
-    color: var(--text-color-light);
+    color: var(--title-color);
 }
 
 .section3 .qualification__rounder{
@@ -352,7 +348,7 @@ dd{
 }
 
 .section4 .work__card{
-    background-color: #D7C0D0;
+    background-color: var(--text-color);
     color: #fff;
     backdrop-filter: blur(10px);
     padding: 1.25rem;
@@ -509,7 +505,7 @@ footer .contact__title{
 
 footer .contact__subtitle{
     font-size: .93rem;
-    color: var(--text-color-light);
+    color: var(--title-color);
 }
 
 form{
@@ -527,7 +523,7 @@ form .container_input > div{
 }
 
 form input, form textarea{
-    background-color: #D7C0D0;
+    background-color: var(--text-color);
     border-radius: .5rem;
     font-family: 'Ubuntu', sans-serif;
     border: none;
@@ -537,13 +533,13 @@ form input, form textarea{
 }
 
 form input::placeholder, form textarea::placeholder{
-    color: #944654;
+    color: var(--body-color);
     font-weight: bold;
 }
 
 form button{
-    background-color: #EFF0D1;
-    color: #D7C0D0;
+    background-color: var(--title-color);
+    color: var(--body-color);
     padding: 1rem;
     border-radius: .5rem;
     border: none;
@@ -552,7 +548,7 @@ form button{
 }
 
 form button i{
-    color: #D7C0D0;
+    color: var(--body-color);
 }
 
 
@@ -560,7 +556,7 @@ form button i{
         12 := media queries
 ---------------------------------------  */
 @media screen and (min-width: 576px){
-    ul span{
+    header ul span{
         display: block;
         margin-left: .5rem;
         margin-top: -0.1rem;
@@ -605,10 +601,6 @@ form button i{
 
 
 @media screen and (min-width: 768px){
-    ul span{
-        display: block;
-    }
-
     dl{
         width: 90%;
         display: flex;
@@ -627,6 +619,11 @@ form button i{
 
     .section1 p{
         font-size: 2rem;
+    }
+
+    .section3 section{
+        width: 50%;
+        margin: auto;
     }
 
     .section4 .work__container{
