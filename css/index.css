@@ -180,7 +180,7 @@ header ul span{
 ------------------------------- */
 
 main{
-    margin-top: 5rem;
+    margin-top: 7rem;
 }
 
 .section1 .button{
@@ -562,19 +562,29 @@ form button i{
         margin-top: -0.1rem;
     }
 
+    .section1 section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
     .section1 article{
+        margin: 0;
         margin-top: .5rem;
     }
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px){
+    .nav-link{
+        font-size: 1rem;
+    }
+
     dl{
         width: 70%;
     }
 
     .section1 article{
         width: 45%;
-        margin-left: 0;
     }
 
     .section1 p{
@@ -614,7 +624,7 @@ form button i{
 
     .section1 article{
         width: 40%;
-        margin-left: 0;
+        margin-top: 3rem;
     }
 
     .section1 p{

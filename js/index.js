@@ -1,13 +1,24 @@
 /***********************
  *  01:= tagcanvas
 ************************/
+let canvas = document.querySelector('canvas');
+    canvas.setAttribute('width', '300');
+    canvas.setAttribute('height', '300');
+
+if(window.innerWidth > 768){
+    canvas.setAttribute('width', '500');
+    canvas.setAttribute('height', '500');
+    canvas.style.marginTop = "-35px";
+}
+
+
 $(document).ready(function(){
     if(!$('#myCanvas').tagcanvas({
-        textColour: "#08fdd8",
+        textColour: "#fff",
         outlineColour: "transparent",
         reverse: true,
         depth: 0.8,
-        maxSpeed: 0.5,
+        maxSpeed: 0.05,
         weight: true,
     }, "tags")){
         $("#myCanvasContainer");
