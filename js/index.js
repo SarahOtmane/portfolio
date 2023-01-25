@@ -1,6 +1,24 @@
-/*****************
- *  01:= work
-*******************/
+/***********************
+ *  01:= tagcanvas
+************************/
+$(document).ready(function(){
+    if(!$('#myCanvas').tagcanvas({
+        textColour: "#08fdd8",
+        outlineColour: "transparent",
+        reverse: true,
+        depth: 0.8,
+        maxSpeed: 0.5,
+        weight: true,
+    }, "tags")){
+        $("#myCanvasContainer");
+    }
+})
+
+
+
+/************************
+ *  02:= word card
+************************/
 
 /*separer les cards selon leur selection*/
 let mixerPortfolio = mixitup('.work__container', {
@@ -22,8 +40,10 @@ function activeWork(){
 
 linkWork.forEach(L => L.addEventListener('click', activeWork));
 
+
+
 /*****************************
- *  02:= portfolio popup
+ *  03:= portfolio popup
 *****************************/
 
 document.addEventListener('click', e =>{

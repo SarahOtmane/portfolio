@@ -9,6 +9,8 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js" defer integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="css/index.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js" defer></script>
+    <script src="js/tagcanvas.js" type="text/javascript" defer></script>
     <script src="js/index.js" defer></script>
 </head>
 <body>
@@ -47,7 +49,8 @@
         <h1 class="title text-align-center">About me</h1>
         <section class="section1 column text-align-center">
             <h3 class="subtitle weight-500">My portfolio</h3>
-            <article>
+            <section>
+                <article>
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae porro necessitatibus perspiciatis explicabo magni, laboriosam commodi, rem quam eos saepe error! Hic neque id molestias vel quia. Officia, obcaecati quo.
                     </p>
@@ -57,6 +60,29 @@
                         </a>
                     </div>
             </article>
+            <div id="myCanvasContainer">
+                <canvas width="500" height="500" id="myCanvas">
+                    <ul id="tags">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JSON</li>
+                        <li>GSAP</li>
+                        <li>THREE</li>
+                        <li>Phaser</li>
+                        <li>JavaScript</li>
+                        <li>Wordpress</li>
+                        <li>Python</li>
+                        <li>Node JS</li>
+                        <li>Git</li>
+                        <li>Bootstrap</li>
+                        <li>jQuery</li>
+                        <li>React</li>
+                        <li>Java</li>
+                        <li>C</li>
+                    </ul>
+                </canvas>
+            </div>
+            </section>
         </section>
 
         <section class="section2 text-align-center">
