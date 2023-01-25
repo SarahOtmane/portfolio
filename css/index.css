@@ -65,7 +65,6 @@
 
 html{
     scroll-behavior: smooth;
-    width: 100%;
 }
 
 body{
@@ -74,8 +73,6 @@ body{
     background-color: #944654;
     color: #D7C0D0;
     padding: 1rem;
-    width: 100%;
-    overflow-x: hidden;
 }
 
 ul{
@@ -153,17 +150,19 @@ section{
 /* ---------------------------- 
         05 := header 
 ---------------------------- */
-ul{
+header ul{
     background-color: var(--background-menu);
     backdrop-filter: blur(10px);
     border-radius: 4rem;
     padding: 1rem 2rem;
     justify-content: space-between;
-    width: 90%;
+    width: 80%;
+    margin-left: 5%;
     position: fixed;
+    opacity: 100;
 }
 
-ul span{
+header ul span{
     display: none;
 }
 
@@ -196,6 +195,7 @@ main{
     width: max-content;
     border-radius: .5rem;
     height: 3.8rem;
+    margin-top: 1.5rem;
 }
 
 .icon{
@@ -203,24 +203,13 @@ main{
     margin-left: .5rem;
 }
 
-.section1 figure{
+.section1 article{
     width: 90%;
-    background-color: #D7C0D0;
-    border-radius: 10%;
-    justify-content: center;
     margin: auto;
 }
 
-.section1 p, .section1 figure,  .section1 .button{
-    margin-top: 1.5rem;
-}
-
-.section1 figure img{
-    width: 85%;
-}
-
-.section1 figure, .section1 figure img{
-    height: 220px;
+.section1 p{
+    font-size: 1.2rem;
 }
 
 /* --------------------------------------- 
@@ -464,36 +453,32 @@ dd{
 }
 
 .portfolio__popup-subtitle{
-    font-size: var(--smaller-font-size);
     margin-bottom: .25rem;
 }
 
-.details__title{
-    font-size: var(--h2-font-size);
-    font-weight: var(--font-medium);
+.portfolio__popup .details__title{
+    font-weight: 500;
     margin-bottom: 1rem;
 }
 
-.details__description{
-    font-size: var(--small-font-size);
+.portfolio__popup .details__description{
     margin-bottom: 2rem;
 }
 
-.details__info li{
+.portfolio__popup .details__info li{
     margin-bottom: .75rem;
     text-transform: capitalize;
-    font-size: var(--small-font-size);
 }
 
-.details__info li:last-child{
+.portfolio__popup .details__info li:last-child{
     margin-bottom: 0;
 }
 
-.details__info li span{
+.portfolio__popup .details__info li span{
     font-weight: normal;
 }
 
-.details__info li a{
+.portfolio__popup .details__info li a{
     text-transform: uppercase;
     color: var(--text-color);
 }
@@ -577,26 +562,12 @@ form button i{
 @media screen and (min-width: 576px){
     ul span{
         display: block;
+        margin-left: .5rem;
+        margin-top: -0.1rem;
     }
 
     .section1 article{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .section1 figure{
-        margin-top: 0;
-        width: 42%;
-    }
-
-    .section1 > article > div{
-        width: 55%;
         margin-top: .5rem;
-    }
-
-    .section4 .work__container{
-        justify-content: space-between;
     }
 }
 
@@ -605,9 +576,22 @@ form button i{
         width: 70%;
     }
 
+    .section1 article{
+        width: 45%;
+        margin-left: 0;
+    }
+
+    .section1 p{
+        font-size: 1.5rem;   
+    }
+
     .section3 section{
         width: 70%;
         margin: auto;
+    }
+
+    .section4 .work__container{
+        justify-content: space-between;
     }
 
     .section4 .work__card{
@@ -636,14 +620,17 @@ form button i{
         width: 46%;
     }
 
-    .section1 > article{
-        width: 80%;
-        margin: auto;
+    .section1 article{
+        width: 40%;
+        margin-left: 0;
     }
 
-    .section3 section{
-        width: 60%;
-        margin: auto;
+    .section1 p{
+        font-size: 2rem;
+    }
+
+    .section4 .work__container{
+        justify-content: space-around;
     }
 
     .section4 .work__card{
