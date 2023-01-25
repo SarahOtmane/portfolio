@@ -208,6 +208,10 @@ main{
     font-size: 1.2rem;
 }
 
+strong{
+    font-size: 1.8rem;
+}
+
 /* --------------------------------------- 
         07 := section2: skills
 ---------------------------------------  */
@@ -591,6 +595,10 @@ form button i{
         font-size: 1.5rem;   
     }
 
+    strong{
+        font-size: 2rem;
+    }
+
     .section3 section{
         width: 70%;
         margin: auto;
@@ -629,6 +637,10 @@ form button i{
 
     .section1 p{
         font-size: 2rem;
+    }
+
+    strong{
+        font-size: 2.5rem;
     }
 
     .section3 section{
