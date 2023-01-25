@@ -75,3 +75,30 @@ function porfolioItemDetails(portfolioItem){
     document.querySelector('.portfolio__popup-subtitle span').innerHTML = portfolioItem.querySelector('.work__title').innerHTML;
     document.querySelector('.portfolio__popup-body').innerHTML = portfolioItem.querySelector('.portfolio__item-details').innerHTML;
 }
+
+
+/*****************************
+ *  03:= animation section 1
+*****************************/
+const timeline =  gsap.timeline({duration : 1});
+
+timeline.from('.title', {y:-80, stagger:.6, opacity:0, ease:'back.out(3)'})
+        .from('.subtitle', {y:-80, stagger:.6, opacity:0, ease:'back.out(3)'}, "-=0.5")
+        .from('.p__section1', {y:60, stagger:.6, duration:1.5, opacity:0, ease :'elastic.out'}, "-=0.5")
+        .from('.button', {width:0, stagger:.6,duration:1.5, opacity:0, ease:'power1'}, "-=.5")
+        .from('#myCanvas', {x:80, stagger:.6, opacity:0, ease:'back.out(3)'}, "-=1.5")
+
+
+        
+
+document.addEventListener('mouseover', e =>{
+    if(e.target.classList.contains('strong')){
+        e.target.classList.add('animate__rubberBand');
+    }
+});
+
+document.addEventListener('mouseout', e =>{
+    if(e.target.classList.contains('strong')){
+        e.target.classList.remove('animate__rubberBand');
+    }
+});

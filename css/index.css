@@ -188,7 +188,7 @@ main{
     background-color: var(--title-color);
     color: var(--body-color);
     padding: 1rem;
-    width: max-content;
+    width: 170px;
     border-radius: .5rem;
     height: 3.8rem;
     margin-top: 1.5rem;
