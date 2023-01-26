@@ -39,7 +39,7 @@
     --body-color:  hsl(349, 36%, 43%);
     --title-color: hsl(62, 51%, 88%);
     --text-color: hsl(318, 22%, 80%);
-    --background-menu: hsla(318, 22%, 85%, .8);
+    --background-menu: hsl(318, 22%, 85%);
     --first-color: hsl(318, 22%, 50%);
     --first-color-lighter: hsl(321, 22%, 85%);
     --first-color-alt: hsl(250, 69%, 61%);
@@ -153,8 +153,6 @@ header ul{
     justify-content: space-between;
     width: 80%;
     margin-left: 5%;
-    position: fixed;
-    opacity: 100;
 }
 
 header ul span{
@@ -178,11 +176,6 @@ header ul span{
 /* ------------------------------- 
         06 := section1: about
 ------------------------------- */
-
-main{
-    margin-top: 7rem;
-}
-
 .section1 .button{
     display: inline-block;
     background-color: var(--title-color);
@@ -218,9 +211,10 @@ strong{
 dl{
     width: 95%;
     margin: auto;
+    margin-top: 2rem;
 }
 
-dl > dt:nth-of-type(2){
+dl > div:nth-of-type(2){
     margin-top: 4rem;
 }
 
@@ -580,7 +574,7 @@ form button i{
 
 @media screen and (min-width: 576px) and (max-width: 768px){
     .nav-link{
-        font-size: 1rem;
+        font-size: .8rem;
     }
 
     dl{
@@ -628,6 +622,7 @@ form button i{
 
     dl > div{
         width: 46%;
+        margin-top: 3rem;
     }
 
     .section1 article{
@@ -641,6 +636,15 @@ form button i{
 
     strong{
         font-size: 2.5rem;
+    }
+
+    .section3{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .section3 > div{
+        margin-top: 3rem;
     }
 
     .section3 section{
