@@ -86,6 +86,7 @@ let submit = document.getElementById('submitButton'),
     email = document.getElementById('email'),
     message = document.getElementById('message');
 
+//function which check if the email is valid
 function isEmailValid(){
     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if(email.value.match(mailformat)){
@@ -95,17 +96,45 @@ function isEmailValid(){
     }
 }
 
-submit.addEventListener('click', (e) => {
-    e.preventDefault();
+//function which check if the field is full and if it was it returns true
+function ifFieldFull(field){
+    if(field.value === ''){
+        field.nextElementSibling.style.display = 'block';
+        return false;
+    }else{
+        return true;
+    }
+}
 
-    if(namee.value === ''){
-        namee.nextElementSibling.style.display = 'block';
+function isFormValid(){
+    let validForm, fullN, fullE, fullS;
+
+    //check if the three fields are full or not
+    fullN = ifFieldFull(namee);
+    fullE = ifFieldFull(email);
+    fullS = ifFieldFull(message);
+
+    //check if the email is valid only if the email is not empty
+    if(ifFieldFull(email) === false){
+        if(!isEmailValid()){
+            email.nextElementSibling.nextElementSibling.style.display = 'block';
+        }
     }
 
-    if(email.value === ''){
-        email.nextElementSibling.style.display = 'block';
-    } else if(!isEmailValid()){
-        email.nextElementSibling.nextElementSibling.style.display = 'block';
+    if((fullE && fullN && fullS && isEmailValid()) === true){
+        validForm = true;
+    }else{
+        validForm = false;
+    }
+
+    return validForm;
+}
+
+submit.addEventListener('click', (e) => {
+    e.preventDefault();
+    let formValid = isFormValid();
+    if(formValid){
+        // submit the form
     }
 })
 
