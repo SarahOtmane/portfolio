@@ -535,9 +535,12 @@
                 <div class="row container_input">
                     <div>
                         <input class="w-100" id="name" type="text" placeholder="Name">
+                        <p class="hidden">Name is required !</p>
                     </div>
                     <div>
                         <input class="w-100" id="email" type="email" placeholder="Email">
+                        <p class="hidden">Email is required !</p>
+                        <p class="hidden">Email is not valid !</p>
                     </div>
                 </div>
                 <div>
@@ -545,6 +548,7 @@
                 </div>
                 <div>
                     <textarea class="w-100" id="message" placeholder="Message" style="height: 8rem;"></textarea>
+                    <p class="hidden">Message is required !</p>
                 </div>
                 <button class="weight-500" id="submitButton" type="submit">Send Message <i class="uil uil-message"></i></button>
             </form>

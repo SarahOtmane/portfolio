@@ -58,8 +58,16 @@ form button{
     border: none;
     width: max-content;
     margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 form button i{
     color: var(--body-color);
+}
+
+form .hidden{
+    display: none;
+    color: rgb(235, 76, 76);
+    font-size: .8rem;
+    margin-bottom: .8rem;
 }

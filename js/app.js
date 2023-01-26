@@ -78,10 +78,36 @@ function porfolioItemDetails(portfolioItem){
 }
 
 
+/*****************************
+ *  04:= form
+*****************************/
+let submit = document.getElementById('submitButton'),
+    namee = document.getElementById('name'),
+    email = document.getElementById('email'),
+    message = document.getElementById('message');
 
+function isEmailValid(){
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if(email.value.match(mailformat)){
+        return true;
+    }else{
+        return false;
+    }
+}
 
+submit.addEventListener('click', (e) => {
+    e.preventDefault();
 
+    if(namee.value === ''){
+        namee.nextElementSibling.style.display = 'block';
+    }
 
+    if(email.value === ''){
+        email.nextElementSibling.style.display = 'block';
+    } else if(!isEmailValid()){
+        email.nextElementSibling.nextElementSibling.style.display = 'block';
+    }
+})
 
 
 
