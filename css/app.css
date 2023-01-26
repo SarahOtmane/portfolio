@@ -162,7 +162,7 @@ header ul span{
 .nav-link{
     color: var(--title-color);
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     padding: .5rem 1rem;
     border-radius: 5rem;
     background: linear-gradient(180deg,
