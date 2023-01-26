@@ -78,6 +78,26 @@ function porfolioItemDetails(portfolioItem){
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************** les animations  **************/
+
 /*****************************
  *  03:= animation section 1
 *****************************/
@@ -90,16 +110,4 @@ timeline.from('.title', {y:-80, opacity:0, ease:'back.out(3)'})
         .from('#myCanvas', {x:80, opacity:0, ease:'back.out(3)'})
 
 
-        
 
-document.addEventListener('mouseover', e =>{
-    if(e.target.classList.contains('strong')){
-        e.target.classList.add('animate__rubberBand');
-    }
-});
-
-document.addEventListener('mouseout', e =>{
-    if(e.target.classList.contains('strong')){
-        e.target.classList.remove('animate__rubberBand');
-    }
-});

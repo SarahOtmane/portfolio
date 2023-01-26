@@ -50,11 +50,6 @@ form input, form textarea{
     padding: 1rem;
 }
 
-form input::placeholder, form textarea::placeholder{
-    color: var(--body-color);
-    font-weight: bold;
-}
-
 form button{
     background-color: var(--text-color);
     color: #fff;
