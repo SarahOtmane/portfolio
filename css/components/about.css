@@ -3,8 +3,8 @@
 ------------------------------- */
 .section1 .button{
     display: inline-block;
-    background-color: var(--title-color);
-    color: var(--body-color);
+    background-color: var(--text-color);
+    color: #fff;
     padding: 1rem;
     width: 170px;
     border-radius: .5rem;

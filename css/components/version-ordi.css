@@ -41,12 +41,8 @@
         margin: auto;
     }
 
-    .section4 .work__container{
-        justify-content: space-around;
-    }
-
     .section4 .work__card{
-        width: 32%;
+        width: 30%;
     }
 
     footer > div{
@@ -68,6 +64,13 @@
 
     form{
         width: 45%;
+    }
+}
+
+
+@media screen and (min-width: 1000px){
+    .section4 .work__card{
+        width: 22%;
     }
 }
 

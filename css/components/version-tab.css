@@ -46,12 +46,8 @@
         margin: auto;
     }
 
-    .section4 .work__container{
-        justify-content: space-between;
-    }
-
     .section4 .work__card{
-        width: 48%;
+        width: 45%;
     }
 
     form{

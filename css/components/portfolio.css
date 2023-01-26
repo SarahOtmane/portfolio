@@ -14,13 +14,14 @@
 }
 
 .section4 .work__card{
-    background-color: var(--text-color);
-    color: #fff;
+    background-color: #fff;
+    color: hsl(349, 36%, 43%);
     backdrop-filter: blur(10px);
     padding: 1.25rem;
     border-radius: .5rem;
     width: 90%;
     margin-bottom: 1rem;
+    margin-right: 1rem;
 }
 
 .section4 .portfolio__item-details{
