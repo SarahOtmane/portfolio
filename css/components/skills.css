@@ -1,0 +1,66 @@
+/* --------------------------------------- 
+        07 := section2: skills
+---------------------------------------  */
+dl{
+    width: 95%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+dl > div:nth-of-type(2){
+    margin-top: 4rem;
+}
+
+dt i{
+    font-size: 2rem;
+    margin-right: .75rem;
+    color: var(--first-color);
+}
+
+dt span{
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: .2rem;
+}
+
+dd{
+    padding-left: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.skills__titles{
+    justify-content: space-between;
+    margin-bottom: .8rem;
+}
+
+.skills__level{
+    color: #fff;
+    font-size: .93rem;
+}
+
+.skills__percentage,
+.skills__bar{
+    height: 5px;
+    border-radius: .25rem;
+}
+
+.skills__bar{
+    background-color: var(--first-color-lighter);
+}
+
+.skills__percentage{
+    background-color: var(--first-color);
+}
+
+.skills__experi{
+    width: 90%;
+}
+
+.skills__indep{
+    width: 75%;
+}
+
+.skills__inter{
+    width: 60%;
+}

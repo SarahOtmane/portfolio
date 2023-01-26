@@ -1,0 +1,14 @@
+/* ---------------------------- 
+        02 := variables
+---------------------------- */
+:root{
+    --body-color:  hsl(349, 36%, 43%);
+    --title-color: hsl(62, 51%, 88%);
+    --text-color: hsl(318, 22%, 80%);
+    --background-menu: hsl(318, 22%, 85%);
+    --first-color: hsl(318, 22%, 50%);
+    --first-color-lighter: hsl(321, 22%, 85%);
+    --first-color-alt: hsl(250, 69%, 61%);
+    --background-color-popup: hsla(250, 30%, 8%, .8);    
+    --backgroud-color-popo-inner: hsl(348, 28%, 66%);
+}

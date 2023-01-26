@@ -1,0 +1,31 @@
+/* ------------------------------- 
+        06 := section1: about
+------------------------------- */
+.section1 .button{
+    display: inline-block;
+    background-color: var(--title-color);
+    color: var(--body-color);
+    padding: 1rem;
+    width: 170px;
+    border-radius: .5rem;
+    height: 3.8rem;
+    margin-top: 1.5rem;
+}
+
+.icon{
+    font-size: 20px;
+    margin-left: .5rem;
+}
+
+.section1 article{
+    width: 90%;
+    margin: auto;
+}
+
+.section1 p{
+    font-size: 1.2rem;
+}
+
+strong{
+    font-size: 1.8rem;
+}

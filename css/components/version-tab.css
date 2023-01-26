@@ -1,0 +1,60 @@
+/* --------------------------------------- 
+        12 := version tab
+---------------------------------------  */
+@media screen and (min-width: 576px){
+    header ul span{
+        display: block;
+        margin-left: .5rem;
+        margin-top: -0.1rem;
+    }
+
+    .section1 section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .section1 article{
+        margin: 0;
+        margin-top: .5rem;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px){
+    .nav-link{
+        font-size: .8rem;
+    }
+
+    dl{
+        width: 70%;
+    }
+
+    .section1 article{
+        width: 45%;
+    }
+
+    .section1 p{
+        font-size: 1.5rem;   
+    }
+
+    strong{
+        font-size: 2rem;
+    }
+
+    .section3 section{
+        width: 70%;
+        margin: auto;
+    }
+
+    .section4 .work__container{
+        justify-content: space-between;
+    }
+
+    .section4 .work__card{
+        width: 48%;
+    }
+
+    form{
+        width: 80%;
+    }
+}

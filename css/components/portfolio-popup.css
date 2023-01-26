@@ -1,0 +1,85 @@
+
+/* ---------------------------- 
+        10 := portfolio popup
+---------------------------- */
+.portfolio__popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background-color-popup);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    z-index: 1000;
+    transition: .3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.portfolio__popup.open{
+    opacity: 1;
+    visibility: visible;
+}
+
+.portfolio__popup-inner{
+    background-color: var(--backgroud-color-popo-inner);
+    color: #fff;
+    width: 900px;
+    border-radius: .5rem;
+    padding: 2.5rem;
+    position: relative;
+}
+
+.portfolio__popup-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 3rem;
+}
+
+.portfolio__popup-close{
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--first-color);
+    cursor: pointer;
+}
+
+.portfolio__popup-img{
+    border-radius: .5rem;
+}
+
+.portfolio__popup-subtitle{
+    margin-bottom: .25rem;
+}
+
+.portfolio__popup .details__title{
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.portfolio__popup .details__description{
+    margin-bottom: 2rem;
+}
+
+.portfolio__popup .details__info li{
+    margin-bottom: .75rem;
+    text-transform: capitalize;
+}
+
+.portfolio__popup .details__info li:last-child{
+    margin-bottom: 0;
+}
+
+.portfolio__popup .details__info li span{
+    font-weight: normal;
+}
+
+.portfolio__popup .details__info li a{
+    text-transform: uppercase;
+    color: var(--text-color);
+}

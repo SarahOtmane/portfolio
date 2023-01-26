@@ -1,0 +1,44 @@
+
+/* ---------------------------- 
+        03 := base
+---------------------------- */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    background-color: var(--body-color);
+    color: var(--text-color);
+    padding: 1rem;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+figure img{
+    width: 90%;
+}
+
+section{
+    width: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+}

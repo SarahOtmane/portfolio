@@ -1,0 +1,29 @@
+/* ---------------------------- 
+        05 := header 
+---------------------------- */
+header ul{
+    background-color: var(--background-menu);
+    backdrop-filter: blur(10px);
+    border-radius: 4rem;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 5%;
+}
+
+header ul span{
+    display: none;
+}
+
+.nav-link{
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: .5rem 1rem;
+    border-radius: 5rem;
+    background: linear-gradient(180deg,
+                hsla(250, 92%, 87%, 1),
+                hsla(250, 92%, 87%, .2)
+    );
+    box-shadow: 0 0 16px rgba(53, 8, 255, 0.4);
+}
