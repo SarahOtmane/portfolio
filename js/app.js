@@ -13,25 +13,11 @@ if(window.innerWidth > 800){
 }
 
 
-// $(document).ready(function(){
-//     if(!$('#myCanvas').tagcanvas({
-//         textColour: "#fff",
-//         outlineColour: "transparent",
-//         reverse: true,
-//         depth: 0.8,
-//         maxSpeed: 0.05,
-//         weight: true,
-//     }, "tags")){
-//         $("#myCanvasContainer");
-//     }
-// })
-
-
 window.onload = function() {
     try {
         TagCanvas.Start('myCanvas','tags',{
-        textColour: '#ff0000',
-        outlineColour: '#ff00ff',
+        textColour: '#fff',
+        outlineColour: 'transparent',
         reverse: true,
         depth: 0.8,
         maxSpeed: 0.05
