@@ -7,7 +7,7 @@
 01. =google fonts
 02. =variables
 03. =bases
-04. =my class
+04. =global class
 05. =header
 06. =about
 07. =skills
@@ -41,9 +41,9 @@
 
 
 /* ---------------------------- 
-        04 := My class
+        04 := Global class
 ---------------------------- */
-@import url(./components/my-class.css);
+@import url(./components/global.css);
 
 
 /* ---------------------------- 

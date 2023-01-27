@@ -5,7 +5,7 @@
     /* --body-color:  hsl(349, 36%, 43%); */
     --title-color: hsl(62, 51%, 88%);
     /* --text-color: hsl(318, 22%, 80%); */
-    --background-menu: hsl(318, 22%, 85%);
+    --background-menu: transparent;
     --first-color: hsl(318, 22%, 50%);
     --first-color-lighter: hsl(321, 22%, 85%);
     --first-color-alt: hsl(250, 69%, 61%);
@@ -14,7 +14,7 @@
 
 
 
-    --body-color:  hsl(254, 31%, 67%);
+    --body-color:  hsl(318, 22%, 80%);
     --text-color: hsl(349, 36%, 43%);
 
 }
