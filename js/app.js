@@ -87,18 +87,32 @@ let submit = document.getElementById('submitButton'),
     email = document.getElementById('email'),
     message = document.getElementById('message');
 
+[namee, email, message].forEach((field) =>{
+    field.addEventListener('change', (e) =>{
+        field.nextElementSibling.style.display = 'none';
+    })
+})
+
+
 //function which check if the email is valid
 function isEmailValid(){
-    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    if(email.value.match(mailformat)){
-        return true;
-    }else{
-        return false;
+    let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    console.log('coucou');
+    if(!(email.value.match(mailformat))){
+        email.nextElementSibling.nextElementSibling.style.display = 'block';
+    }
+}
+
+//function which check if the name is valid
+function isNameValid(){
+    if( /[0-9]/.test(namee.value) || /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/.test(namee.value)){
+        namee.nextElementSibling.nextElementSibling.style.display = 'block';
     }
 }
 
 //function which check if the field is full and if it was it returns true
-function ifFieldFull(field){
+function isFieldFull(field){
+    console.log('hi');
     if(field.value === ''){
         field.nextElementSibling.style.display = 'block';
         return false;
@@ -107,42 +121,38 @@ function ifFieldFull(field){
     }
 }
 
-function isFormValid(){
-    let validForm, fullN, fullE, fullS;
-
-    //check if the three fields are full or not
-    fullN = ifFieldFull(namee);
-    fullE = ifFieldFull(email);
-    fullS = ifFieldFull(message);
-
-    //check if the email is valid only if the email is not empty
-    if(ifFieldFull(email) === false){
-        if(!isEmailValid()){
-            email.nextElementSibling.nextElementSibling.style.display = 'block';
-        }
-    }
-
-    if((fullE && fullN && fullS && isEmailValid()) === true){
-        validForm = true;
-    }else{
-        validForm = false;
-    }
-
-    return validForm;
-}
 
 submit.addEventListener('click', (e) => {
     e.preventDefault();
-    let formValid = isFormValid();
-    if(formValid){
-        // submit the form
-    }
+
+    //it checks if the three fields are full
+    let fullN = isFieldFull(namee),
+        fullE =isFieldFull(email);
+    isFieldFull(message);
+
+    console.log(fullE, fullN);
+    
+    //it checks if the name is valid only if the input is full
+    if(fullN === true) isNameValid();
+
+    //it checks if the email is valid only if the input is full
+    if(fullE === true) isEmailValid();
 })
 
 
 
 
 
+
+fetch('https://api.themoviedb.org/3/movie/550?api_key=49905de87860cd24809574eec8de9a69')
+    .then(resp => resp.json())
+    .then(result => {
+        console.log(result);
+    })
+
+
+
+    "https://api.themoviedb.org/3/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg?api_key=49905de87860cd24809574eec8de9a69"
 
 
 
