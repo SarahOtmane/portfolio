@@ -2,6 +2,10 @@
         13 := version ordi
 ---------------------------------------  */
 @media screen and (min-width: 768px){
+    header ul{
+        width: 80%;
+    }
+
     dl{
         width: 90%;
         display: flex;
@@ -69,6 +73,10 @@
 
 
 @media screen and (min-width: 1000px){
+    header ul{
+        width: 65%;
+    }
+
     .section4 .work__card{
         width: 22%;
     }

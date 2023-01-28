@@ -45,7 +45,7 @@
     top: 1.5rem;
     right: 1.5rem;
     font-size: 1.5rem;
-    color: var(--first-color);
+    color: hsl(314, 22%, 85%);
     cursor: pointer;
 }
 
@@ -81,5 +81,5 @@
 
 .portfolio__popup .details__info li a{
     text-transform: uppercase;
-    color: var(--text-color);
+    color: hsl(314, 22%, 85%);
 }
