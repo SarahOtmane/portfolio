@@ -19,6 +19,9 @@
         margin-top: .5rem;
     }
 
+    .portfolio__popup-content{
+        flex-direction: row;
+    }
     
 }
 

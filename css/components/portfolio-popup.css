@@ -33,11 +33,21 @@
     position: relative;
 }
 
-.portfolio__popup-content{
+/* .portfolio__popup-content{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     column-gap: 3rem;
+} */
+
+
+.portfolio__popup-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.pp__thumbnail + div{
+    margin-left: 2rem;
 }
 
 .portfolio__popup-close{
