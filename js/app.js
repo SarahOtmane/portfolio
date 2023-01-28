@@ -1,7 +1,7 @@
-import {tagCanvas} from './components/1.about.js';
-import {portfolioCards} from './components/2.portfolio.js';
-import {showPopUp} from './components/3.portfolio-popup.js';
-import {validateForm} from './components/4.form.js';
+import {tagCanvas} from './components/about.js';
+import {portfolioCards} from './components/portfolio.js';
+import {showPopUp} from './components/portfolio-popup.js';
+import {validateForm} from './components/form.js';
 
 
 
