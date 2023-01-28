@@ -17,6 +17,7 @@
 11. =footer
 12. =version tab
 13. =version ordi
+14. =section movies
 -----------------------------------------------*/
 
 
@@ -98,3 +99,9 @@
         13 := version ordi
 ---------------------------------------  */
 @import url(./components/version-ordi.css);
+
+
+/* --------------------------------------- 
+        14 := section movies
+---------------------------------------  */
+@import url(./components/movies.css);

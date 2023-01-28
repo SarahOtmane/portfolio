@@ -49,6 +49,11 @@
         width: 30%;
     }
 
+    #movies div{
+        width: 90% !important;
+        margin: auto;
+    }
+
     footer > div{
         flex-direction: row;
         justify-content: space-between;
