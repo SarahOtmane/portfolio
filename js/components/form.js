@@ -7,13 +7,6 @@ let submit = document.getElementById('submitButton'),
     email = document.getElementById('email'),
     message = document.getElementById('message');
 
-[namee, email, message].forEach((field) =>{
-    field.addEventListener('change', (e) =>{
-        field.nextElementSibling.style.display = 'none';
-    })
-})
-
-
 //function which check if the email is valid
 function isEmailValid(){
     let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -42,6 +35,13 @@ function isFieldFull(field){
 }
 
 export function validateForm(){
+    [namee, email, message].forEach((field) =>{
+        field.addEventListener('change', (e) =>{
+            field.nextElementSibling.style.display = 'none';
+        })
+    })
+
+    
     submit.addEventListener('click', (e) => {
         e.preventDefault();
     
