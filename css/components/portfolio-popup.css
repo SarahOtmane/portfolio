@@ -46,10 +46,6 @@
     flex-direction: column;
 }
 
-.pp__thumbnail{
-    max-width: 50%;
-}
-
 .pp__thumbnail + div{
     margin-left: 2rem;
 }

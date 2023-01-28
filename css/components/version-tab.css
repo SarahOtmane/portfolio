@@ -23,6 +23,10 @@
         flex-direction: row;
     }
 
+    .pp__thumbnail{
+        max-width: 50%;
+    }
+
     #movies div{
         flex-direction: row !important;
         justify-content: space-between !important;
