@@ -30,71 +30,71 @@
 /* ---------------------------- 
         02 := variables
 ---------------------------- */
-@import url(./components/variables.css);
+@import url(./components/2.variables.css);
         
 
 
 /* ---------------------------- 
         03 := base
 ---------------------------- */
-@import url(./components/bases.css);
+@import url(./components/3.bases.css);
 
 
 /* ---------------------------- 
         04 := Global class
 ---------------------------- */
-@import url(./components/global.css);
+@import url(./components/4.global.css);
 
 
 /* ---------------------------- 
         05 := header 
 ---------------------------- */
-@import url(./components/header.css);
+@import url(./components/5.header.css);
 
 
 /* ------------------------------- 
         06 := section1: about
 ------------------------------- */
-@import url(./components/about.css);
+@import url(./components/6.about.css);
 
 
 /* --------------------------------------- 
         07 := section2: skills
 ---------------------------------------  */
-@import url(./components/skills.css);
+@import url(./components/7.skills.css);
 
 
 /* --------------------------------------- 
         08 := section3: qualifications
 ---------------------------------------  */
-@import url(./components/qualifications.css);
+@import url(./components/8.qualifications.css);
 
 
 /* --------------------------------------- 
         09 := section4: portfolio
 ---------------------------------------  */
-@import url(./components/portfolio.css);
+@import url(./components/9.portfolio.css);
 
 
 /* ---------------------------- 
         10 := portfolio popup
 ---------------------------- */
-@import url(./components/portfolio-popup.css);
+@import url(./components/10.portfolio-popup.css);
 
 
 /* --------------------------------------- 
         11 := footer
 ---------------------------------------  */
-@import url(./components/footer.css);
+@import url(./components/11.footer.css);
 
 
 /* --------------------------------------- 
         12 := version tab
 ---------------------------------------  */
-@import url(./components/version-tab.css);
+@import url(./components/12.version-tab.css);
 
 
 /* --------------------------------------- 
         13 := version ordi
 ---------------------------------------  */
-@import url(./components/version-ordi.css);
+@import url(./components/13.version-ordi.css);
