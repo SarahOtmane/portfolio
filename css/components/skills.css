@@ -64,3 +64,29 @@ dd{
 .skills__inter{
     width: 60%;
 }
+
+.skills__experi.active, .skills__indep.active, .skills__inter.active{
+    animation: progress-bar 1s;
+}
+
+@keyframes progress-bar{
+    0% {
+        transform: scaleX(0);
+        opacity: .1;
+    }
+    17% {
+        transform: scaleX(.18);
+    }
+    24% {
+        transform: scaleX(.4);
+    }
+    46% {
+        transform: scaleX(.81);
+    }
+    85%,100% {
+        opacity: 1;
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}

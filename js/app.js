@@ -7,7 +7,7 @@ import { movies } from './components/movies.js';
 
 
 /*************** les animations  **************/
-import { animSect1 } from './components/animations.js';
+import { anim } from './components/animations.js';
 
 
 function run(){
@@ -18,7 +18,7 @@ function run(){
     movies();
 
     /*************** les animations  **************/
-    animSect1();
+    anim();
 }
 
 run();
