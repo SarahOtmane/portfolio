@@ -18,6 +18,18 @@ function animSect1(){
                 .from(tab[3], {duration:1.5, opacity:0, ease:'power1'})
                 .from(tab[4], {x:80, opacity:0, ease:'back.out(3)'})
     }
+
+    let anim = document.querySelectorAll('.strong');
+    for(let i = 0; i < anim.length; i++){
+        anim[i].addEventListener('mouseenter', () => {
+            anim[i].classList.add('anima');
+            console.log('coucou');
+        });
+
+        anim[i].addEventListener('mouseleave', () => {
+            anim[i].classList.remove('anima');
+        })
+    }
 }
 
 
@@ -46,27 +58,7 @@ function addClass(tab){
     }
 }
 
-
-/*****************************
- *  07:= animation section 3
-*****************************/
-function animSect3(){
-    window.addEventListener('scroll', () =>{
-        let topElement = document.querySelector('.qualification__icon').nextElementSibling.getBoundingClientRect().top;
-        if(scrollTop > (scrollTop+topElement-200).toFixed() - clientHeight*.6){
-            timeline.from('.gauche', {x:-50, opacity:0, stagger:.6, ease:'bounce'})
-                    .from('.droite', {x:50, opacity:0, stagger:.6, delay:-1, ease:'bounce'})
-                    .from('.qualification__rounder', {opacity:0, stagger:.6, ease:'Elastic'})
-                    .from('.qualification__line', {})
-        }
-    })
-}
-
-
-
-
 export function anim(){
     animSect1();
     animSect2();
-    animSect3();
 }

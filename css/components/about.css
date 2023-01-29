@@ -28,4 +28,8 @@
 
 strong{
     font-size: 1.8rem;
-}   
+}  
+
+strong.anima{
+    color: var(--first-color);
+}

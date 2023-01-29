@@ -6,6 +6,7 @@ function fetchh(nb){
     .then(resp => resp.json())
     .then(result => {
         if(result.success === false){
+            console.log(result);
             //il y'a des nombre qui ne corespondent a aucun film
             //donc si c le cas il y'aura un mess d'erreur mais ca n'interromp pas la prog
             //si c le cas on refais appel a la fct fetchh
