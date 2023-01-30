@@ -2,10 +2,13 @@
 /*****************************
  *  03:= portfolio popup
 *****************************/
+//fonction qui permet d'afficher le pop up
 function togglePortfolioPopup(){
     document.querySelector('.portfolio__popup').classList.toggle('open');
 }
 
+
+//fonction qui permet d'afficher le contenu qui correspond a chaque pop up
 function porfolioItemDetails(portfolioItem){
     document.querySelector('.pp__thumbnail img').src = portfolioItem.querySelector('.work__img').src;
     document.querySelector('.portfolio__popup-subtitle span').innerHTML = portfolioItem.querySelector('.work__title').innerHTML;

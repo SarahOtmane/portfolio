@@ -1,3 +1,13 @@
+/*
+ce qui change lors du responsive : 
+    1. dans la nav il ya plus que des icons 
+    2. la section 1 n'est plus en display column mais en row
+    3. les div qui contiennent les skills ne prennent plus toute la largeur de l'ecran
+    4. la taille des work cards
+    5. la section movies est en display row
+*/
+
+
 /* --------------------------------------- 
         12 := version tab
 ---------------------------------------  */

@@ -41,7 +41,6 @@ export function validateForm(){
         })
     })
 
-    
     submit.addEventListener('click', (e) => {
         e.preventDefault();
     
