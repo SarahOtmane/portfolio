@@ -86,6 +86,10 @@ ce qui change lors du responsive :
         width: 45%;
     }
 
+    .section4 .work__img{
+        height: 180px;
+    }
+
     form{
         width: 80%;
     }

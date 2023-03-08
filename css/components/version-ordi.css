@@ -54,7 +54,11 @@ ce qui change lors du responsive:
     }
 
     .section4 .work__card{
-        width: 30%;
+        width: 35%;
+    }
+
+    .section4 .work__img{
+        height: 160px;
     }
 
     #movies div{
@@ -85,7 +89,7 @@ ce qui change lors du responsive:
 }
 
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1050px){
     header ul{
         width: 65%;
     }
